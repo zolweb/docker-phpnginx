@@ -4,8 +4,6 @@ MAINTAINER ZOL <hello@zol.fr>
 
 ENV DEBIAN_FRONTEND noninteractive
 
-ENV PATH /usr/sbin:/usr/bin:/usr/local/bin:$PATH
-
 # Install php and nginx
 RUN apt-get update && apt-get install -y \
     curl \
