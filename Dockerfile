@@ -30,6 +30,8 @@ RUN sed -i "s/;listen.allowed_clients = 127.0.0.1/listen.allowed_clients = 0.0.0
 # Install composer
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/bin --filename=composer
 
+EXPOSE 80
+
 # Install the server start script
 COPY start.sh /root/start.sh
 RUN chmod u+x /root/start.sh
