@@ -1,4 +1,4 @@
 #!/bin/bash
 
-/etc/init.d/php5-fpm start
+php5-fpm -R
 nginx -c /etc/nginx/nginx.conf
